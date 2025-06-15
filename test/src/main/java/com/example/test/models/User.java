@@ -78,9 +78,9 @@ public class User {
     }
 
     public void setCompany(String name, String catchPhrase, String bs) {
-        this.name = name;
-        this.catchPhrase = catchPhrase;
-        this.bs = bs;
+        this.company.setName(name);
+        this.company.setCatchPhrase(catchPhrase);
+        this.company.setBs(bs);
     }
 
 

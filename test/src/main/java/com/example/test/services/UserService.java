@@ -23,8 +23,8 @@ public class UserService {
         userInfo.setName(name);
         userInfo.setEmail(email);
         userInfo.setName(name);
-        userInfo.setAddress(address.g); //
-        userInfo.setGeo(); //
+//        userInfo.setAddress(address.g); //
+//        userInfo.setGeo(); //
         userInfo.setPhone(phone);
         userInfo.setWebsite(website);
         userInfo.setCompany(company.getName(), company.getCatchPhrase(), company.getBs()); //

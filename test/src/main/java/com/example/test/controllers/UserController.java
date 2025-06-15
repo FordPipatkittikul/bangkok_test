@@ -82,6 +82,22 @@ public class UserController {
         }
     }
 
+    @PutMapping("/{userId}")
+    public ResponseEntity<Object> HttpcreateUser(@RequestBody User user, @PathVariable Long userId){
+        try{
+
+        } catch (Exception e) {
+
+            // Return a failure response with JSON and HTTP status message 500
+            return ResponseEntity
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .body("{\"msg\": \"Fail to update user\"}");
+        }
+    }
+
+
+
     @DeleteMapping("/{userId}")
     public ResponseEntity<Void> deleteReview(@PathVariable Long userId){
         userService.deleteUser(userId);
